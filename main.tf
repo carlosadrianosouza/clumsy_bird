@@ -91,7 +91,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical change to commmit
+  owners = ["099720109477"] # Canonical change to commmit    
 }
 
 resource "aws_eip" "clumsy_bird" {
