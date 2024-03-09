@@ -96,7 +96,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_eip" "clumsy_bird" {
   instance = aws_instance.clumsy_bird.id
-  vpc      = true
+  #vpc      = true
   tags = {
     "Name" = "${var.prefix}-${var.project}-${var.environment}"
   }
